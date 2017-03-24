@@ -1,4 +1,4 @@
-# Flags
+# Flags参数
 This file documents all available flags for all scripts.
 
 ## Common flags
@@ -6,9 +6,9 @@ There are some common flags that are shared by many Lua scripts:
 
 - `-checkpoint`: Path to the checkpoint containing the model to use
 - `-image_size`: Before being processed by the model, images will be resized so their max side length is equal to this;
-  larger values will make the model run more slowly.
+  larger values will make the model run more slowly.预处理时使最大边变成这个值
 - `-rpn_nms_thresh`: Threshold for non-maximum suppression among region proposals in the region proposal network; should
-   be a number between 0 and 1.
+   be a number between 0 and 1.区域建议网络中，区域建议的non-maximum抑制阙值？
 - `-final_nms_thresh`: Threshold for non-maximum suppression among final output boxes; should be a number between 0 and 1.
   Using a larger value will cause the model to produce more detections, but they will have more overlap with each other.
 - `-num_proposals`: The number of region proposals that should be run through the recognition network and language model.
